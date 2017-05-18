@@ -1,0 +1,11 @@
+def potencia(a, b)
+    if (b == 0)
+       resultado = 1
+    else
+       resultado = a * potencia(a,b-1)
+    end
+    return resultado
+end
+
+resultado=potencia(2,3)
+puts "resultado = "+resultado.to_s
