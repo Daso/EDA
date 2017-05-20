@@ -1,0 +1,8 @@
+def suma_hasta(sumatoria, m, contador)
+  if sumatoria >= m 
+    return 0
+  else 
+    contador = 1 + suma_hasta(sumatoria + contador, m, contador + 1)
+  end 
+end 
+puts suma_hasta(0, 7, 1)
